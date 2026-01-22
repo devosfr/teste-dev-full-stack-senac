@@ -67,7 +67,7 @@ API desenvolvida em Laravel, com o objetivo de ser consumida pelo frontend.
 ### 1. Repository Clone
 ```bash
 git clone https://github.com/devosfr/teste-dev-full-stack-senac
-cd dona-marketplace-application
+cd teste-dev-full-stack-senac
 
 ```
 
