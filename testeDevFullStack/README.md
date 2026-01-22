@@ -6,7 +6,7 @@ Front-end desenvolvido em ReactJS, com o objetivo de consumir a API desenvolvida
 ### 1. Repository Clone
 ```bash
 git clone https://github.com/devosfr/teste-dev-full-stack-senac
-cd dona-marketplace-application
+cd teste-dev-full-stack-senac
 ```
 
 ### 🔐 Autenticação e Backend
