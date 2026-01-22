@@ -1,0 +1,519 @@
+{
+	"info": {
+		"_postman_id": "118685da-37bf-48ae-bc31-d037ea38e5d8",
+		"name": "testeDevFullStack",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1003112",
+		"_collection_link": "https://obitec-2716.postman.co/workspace/Teste-Dev-FullStack-Senac~d02566fd-b60d-40d9-ac6a-88b3f10ab17a/collection/1003112-118685da-37bf-48ae-bc31-d037ea38e5d8?action=share&source=collection_link&creator=1003112"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "http://127.0.0.1:8000/"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users?perPage=10&&currentPage=1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "perPage",
+									"value": "10"
+								},
+								{
+									"key": null,
+									"value": null
+								},
+								{
+									"key": "currentPage",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+									},
+									{
+										"key": "Referer",
+										"value": "http://127.0.0.1:8000/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.4.1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 21 Jan 2026 14:01:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Dr. Marietta Schamberger\",\n        \"email\": \"toy.adah@example.org\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Dr. Jody Rutherford\",\n        \"email\": \"amitchell@example.com\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Terrill Wiza\",\n        \"email\": \"bethany.sauer@example.org\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Ms. Linnie Ritchie\",\n        \"email\": \"johnston.cade@example.net\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Darrion Windler\",\n        \"email\": \"ewehner@example.com\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Ayana Willms\",\n        \"email\": \"jessy84@example.org\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Dr. Vernon Rolfson Sr.\",\n        \"email\": \"ganderson@example.net\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Prudence Russel\",\n        \"email\": \"charity.ledner@example.net\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "by-id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "http://127.0.0.1:8000/"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "by-id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+									},
+									{
+										"key": "Referer",
+										"value": "http://127.0.0.1:8000/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.4.1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 21 Jan 2026 14:00:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"Terrill Wiza\",\n    \"email\": \"bethany.sauer@example.org\",\n    \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n    \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n    \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Oséias Freitas\",\n    \"email\": \"oseiasdfreitas@gmail.com\",\n    \"cpf\": \"99206374087\",\n    \"password\": \"123456\",\n    \"role\": \"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"99206374087\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users/login",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Oséias Freitas\",\n    \"email\": \"oseiasdfreitas@gmail.com\",\n    \"cpf\": \"99206374087\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/api/users/1",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{baseURL}}/api/users/27",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"27"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "Referer",
+								"value": "http://127.0.0.1:8000/"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/roles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "User-Agent",
+										"value": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36"
+									},
+									{
+										"key": "Referer",
+										"value": "http://127.0.0.1:8000/"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": null,
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.4.1"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 21 Jan 2026 14:01:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Dr. Marietta Schamberger\",\n        \"email\": \"toy.adah@example.org\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Dr. Jody Rutherford\",\n        \"email\": \"amitchell@example.com\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Terrill Wiza\",\n        \"email\": \"bethany.sauer@example.org\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Ms. Linnie Ritchie\",\n        \"email\": \"johnston.cade@example.net\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Darrion Windler\",\n        \"email\": \"ewehner@example.com\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Ayana Willms\",\n        \"email\": \"jessy84@example.org\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Dr. Vernon Rolfson Sr.\",\n        \"email\": \"ganderson@example.net\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Prudence Russel\",\n        \"email\": \"charity.ledner@example.net\",\n        \"email_verified_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"created_at\": \"2026-01-21T13:59:57.000000Z\",\n        \"updated_at\": \"2026-01-21T13:59:57.000000Z\"\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
