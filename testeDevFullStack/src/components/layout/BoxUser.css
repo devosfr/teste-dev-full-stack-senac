@@ -1,0 +1,126 @@
+
+div.box_user {
+  position: relative;
+  overflow: visible;
+}
+
+.box_user_inner {
+  border-radius: 5px;
+  border: 2px solid var(--color-b);
+  background: var(--color-c);
+  margin-bottom: 15px;
+  display: flex;
+  width: 100%;
+  opacity: 0.8;
+  filter: drop-shadow(var(--shadow));
+  transition: all 0.3s;
+}
+
+
+div.box_user div.box_picture {
+  width: 150px;
+  height: auto;
+  border-radius: 5px 0px 0px 5px;
+  color: var(--color-d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  border-right: 1px solid var(--color-b);
+}
+
+div.box_user div.box_infos {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.box_infos div.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 5px;
+}
+
+div.box_infos div.infos h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+div.box_infos div.infos span {
+  color: var(--color-g);
+  font-size: 17px;
+}
+
+div.infos div.birthday {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-g);
+}
+
+div.infos div.birthday span {
+  margin-right: 5px;
+  color: var(--color-g);
+}
+
+div.box_infos div.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.actions {
+  position: relative;
+}
+
+.actions-dropdown {
+  position: relative;
+}
+
+.actions-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.actions-menu {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1000000 !important;
+}
+
+.actions-item {
+  width: 100%;
+margin: 0;
+  background: none;
+  box-shadow: none !important;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions-item:hover {
+  background: #f5f5f5;
+}
+
+.actions-item.edit {
+  color: #2c7be5;
+}
+
+.actions-item.remove {
+  color: #dc3545;
+}

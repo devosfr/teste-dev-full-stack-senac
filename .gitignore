@@ -1,0 +1,7 @@
+.env
+testeDevFullStack-api/.env
+/node_modules
+testeDevFullStack-api/node_modules
+testeDevFullStack/node_modules
+
+

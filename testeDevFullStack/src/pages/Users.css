@@ -1,0 +1,33 @@
+.main {
+  width: 800px;
+  margin: auto;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 100px;
+}
+.user-form {
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin-bottom: 40px;
+}
+div.feed_form {
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+}
+div.feed_form > span {
+  color: var(--color-g);
+  font-size: 16px;
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
